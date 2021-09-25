@@ -2,6 +2,7 @@
 <%= form_with url: "/posts", method: :post, id: "form" do |form| %>
   <%= form.text_field :content , id: "content" %>
   <%= form.submit '投稿する', id: "submit" %>
+<div id="char-num">0文字</div>
 <% end %>
 
 <div id="list"></div>

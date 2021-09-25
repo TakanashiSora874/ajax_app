@@ -31,6 +31,9 @@ function post (){
       const formText = document.getElementById("content")
       list.insertAdjacentHTML("afterend", buildHTML(XHR));
       formText.value = "";
+
+      const charNum = document.getElementById("char-num");
+      charNum.innerHTML = "0文字";
     };
   });
 };
